@@ -1,73 +1,62 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
-        <!-- google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <header>
-            <p class="restaurant-name logo">Jimmy’s Diner</p>
-            <p class="restaurant-description logo">The best burgers and pizzas in town.</p>
-            <img src="images/logo.png">  
-        <header>
-        <main>
-            <div class="element">
-                <img src="images/Pizza.png">
-                <p class="div-element item-name">Pizza</p>
-                <p class="div-element item-ingredients">pepperoni, mushrom, mozarella</p>
-                <p class="div-element item-price">$14</p>
-                <i class="fa-solid fa-plus"></i>
-            </div>
-            <div class="element">
-                <img src="images/Pizza.png">
-                <p class="div-element item-name">Pizza</p>
-                <p class="div-element item-ingredients">pepperoni, mushrom, mozarella</p>
-                <p class="div-element item-price">$14</p>
-                <i class="fa-solid fa-plus"></i>
-            </div>
-            <div class="element">
-                <img src="images/Pizza.png">
-                <p class="div-element item-name">Pizza</p>
-                <p class="div-element item-ingredients">pepperoni, mushrom, ozarella</p>
-                <p class="div-element item-price">$14</p>
-                <i class="fa-solid fa-plus"></i>
-            </div>
-            <div class="ticket">
-                <p id="title">Your order</p>
-                <div class="order">
-                    <p class="item-name">Pizza</p>
-                    <p id="remove">remove</p>
-                    <p class="item-price">$14</p>
-                </div>
-                <div class="order">
-                    <p class="item-name">Pizza</p>
-                    <p id="remove">remove</p>
-                    <p class="item-price">$14</p>
-                </div>
-                <hr>
-                <div class="order">
-                    <p class="item-name">Total price:</p>
-                    <p class="item-price">$26</p>
-                </div>
-                <button>Complete order</button>
-            </div>
-        </main>
-        <card>
-            <p class="title">Enter card details</p>
-            <input type="text" placeholder="Enter your name">
-            <input type="text" placeholder="Enter card number">
-            <input type="text" placeholder="Enter CVV">
-            <button>Pay</button>
-        </card>
-	<script src="index.js"></script>
-    </body>
-</html>
 
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <p class="restaurant-name logo">Jimmy’s Diner</p>
+        <p class="restaurant-description logo">The best burgers and pizzas in town.</p>
+        <img src="images/logo.png">
+    </header>
+    <!-- main -->
+    <div class="main" id="main">
+        
+    </div>
+    <!-- ticket -->
+    <div id="ticket" class="ticket">
+        <p id="title">Your order</p>
+        <div class="order">
+            <p class="item-name">Pizza</p>
+            <p id="remove">remove</p>
+            <p class="item-price">$14</p>
+        </div>
+        <div class="order">
+            <p class="item-name">Pizza</p>
+            <p id="remove">remove</p>
+            <p class="item-price">$14</p>
+        </div>
+        <hr>
+        <div class="order">
+            <p class="item-name">Total price:</p>
+            <p class="item-price">$26</p>
+        </div>
+        <button id="complete-order">Complete order</button>
+    </div>
+    <!-- cockie -->
+    <div id="card" class="card">
+        <p class="title">Enter card details</p>
+        <input type="text" placeholder="Enter your name">
+        <input type="text" placeholder="Enter card number">
+        <input type="text" placeholder="Enter CVV">
+        <button id="pay-btn">Pay</button>
+    </div>
+    <script src="index.js" type="module"></script>
+    <script src="./data.js" type="module"></script>
+</body>
+
+</html>

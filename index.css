@@ -6,13 +6,21 @@ body {
 header {
   width: 600px;
   height: 167px;
-  margin: 0 auto 22px auto;
+  margin: auto;
   position: relative;
 }
 
-main {
+.emoji {
+  margin: 0;
+  position: absolute;
+  left: -15px;
+  font-size: 79px;
+}
+
+.main {
   width: 600px;
-  margin: auto;
+  margin: 22px auto 0 auto;
+  border: white solid;
 }
 
 .logo {
@@ -37,8 +45,7 @@ main {
 .element {
   width: 508px;
   height: 140px;
-  margin: auto;
-  margin-top: 45px;
+  margin: 45px auto 0 auto;
   position: relative;
   border-bottom: 1px solid #d2d2d2;
 }
@@ -117,6 +124,7 @@ button {
   font-family: verdana;
   margin-top: 42px;
   margin-bottom: 53px;
+  cursor: pointer;
 }
 
 #remove {
@@ -138,7 +146,7 @@ button {
   margin: 11px 0;
 }
 
-card {
+.card {
   display: none;
   position: fixed;
   top: 0;
@@ -173,4 +181,8 @@ input {
   left: 61.22px;
   border-radius: 3.89px;
   border: 1.3px solid #757575;
+}
+
+.appear {
+  display: inline;
 }
