@@ -17,26 +17,35 @@ document.addEventListener("click", function (e) {
     facture.push(`
          <div class="order">
             <p class="item-name">${snackObj.name}</p>
-             <p class="remove" id="remove${facture.length}">remove</p>
+             <p class="remove">remove</p>
              <p class="prix">$${snackObj.price}</p>
          </div>`);
     totalPrice += snackObj.price;
-    console.log(facture)
     render();
-}
-    // document
-    // .getElementById(`remove${facture.length}`)
-    // .addEventListener("click", ()=>{
-    //     console.log("hhgh")
-    // });
-
+  }
+  if (e.target.classList.contains("remove")) {
+    removeItem(e.target.parentElement);
+  }
 });
 
-// function remover() {
-//     //   facture.splice(num - 1, 1);
-//       console.log("hhh");
-//     //   render();
-//     }
+function removeItem(itemElement) {
+  // Retrieve the item's price from the DOM
+  const price = parseFloat(itemElement.querySelector(".prix").textContent.slice(1));
+  
+  // Remove the item from the facture array
+  const itemName = itemElement.querySelector(".item-name").textContent;
+  const itemIndex = facture.findIndex(item => item.includes(itemName));
+  facture.splice(itemIndex, 1);
+  
+  // Update the total price
+  totalPrice -= price;
+  
+  // Remove the item from the DOM
+  itemElement.remove();
+  
+  // Render the updated cart
+  render();
+}
 
 function render() {
   ticket.innerHTML = `<p id="title">Your order</p>
