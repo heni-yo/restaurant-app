@@ -57,7 +57,7 @@ header {
 }
 
 .item-name {
-  margin: 0;
+  margin: 0 10px 0 0;
   top: 10px;
   font-size: 28px;
   line-height: 17px;
@@ -70,11 +70,21 @@ header {
   color: #8b8b8b;
 }
 
+.prix{
+  margin: 0;
+  top: 0;
+  font-size: 20px;
+  line-height: 24px;
+  position: absolute;
+  right: 0;}
+
 .item-price {
   margin: 0;
   top: 65;
   font-size: 20px;
   line-height: 24px;
+  position: absolute;
+  right: 0;
 }
 
 i {
@@ -127,23 +137,20 @@ button {
   cursor: pointer;
 }
 
-#remove {
+.remove {
   font-family: Verdana;
   font-size: 12px;
   line-height: 24px;
   color: #bbbbbb;
-  position: absolute;
-  left: 60;
-  top: 5;
   margin: 0;
+  cursor: pointer;
 }
 
 .order {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: relative;
   margin: 11px 0;
+  position: relative;
 }
 
 .card {
