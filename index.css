@@ -1,0 +1,176 @@
+body {
+  font-family: "Smythe", "cursive";
+  margin: 0;
+}
+
+header {
+  width: 600px;
+  height: 167px;
+  margin: 0 auto 22px auto;
+  position: relative;
+}
+
+main {
+  width: 600px;
+  margin: auto;
+}
+
+.logo {
+  position: absolute;
+  margin: 0;
+  left: 46.07px;
+  color: white;
+}
+
+.restaurant-name {
+  font-size: 39px;
+  line-height: 24px;
+  top: 46px;
+}
+
+.restaurant-description {
+  font-size: 22px;
+  top: 89px;
+  line-height: 14px;
+}
+
+.element {
+  width: 508px;
+  height: 140px;
+  margin: auto;
+  margin-top: 45px;
+  position: relative;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.div-element {
+  margin: 0;
+  left: 101px;
+  position: absolute;
+}
+
+.item-name {
+  margin: 0;
+  top: 10px;
+  font-size: 28px;
+  line-height: 17px;
+}
+
+.item-ingredients {
+  top: 35px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8b8b8b;
+}
+
+.item-price {
+  margin: 0;
+  top: 65;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+i {
+  padding: 12px;
+  color: #3c3c3c;
+  font-size: 30px;
+  cursor: pointer;
+  border: solid #dedede 1.5px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.ticket {
+  width: 508px;
+  margin: 45px auto 0 auto;
+}
+
+#title {
+  font-size: 28px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 53px;
+}
+
+hr {
+  width: 504px;
+  height: 2px;
+  background-color: 393333;
+  border: none;
+  margin-top: 31px;
+  margin-bottom: 14px;
+}
+
+button {
+  width: 508px;
+  height: 60px;
+  padding: 18px, 175px, 18px, 194px;
+  border-radius: 3px;
+  color: white;
+  background-color: #16db99;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: verdana;
+  margin-top: 42px;
+  margin-bottom: 53px;
+}
+
+#remove {
+  font-family: Verdana;
+  font-size: 12px;
+  line-height: 24px;
+  color: #bbbbbb;
+  position: absolute;
+  left: 60;
+  top: 5;
+  margin: 0;
+}
+
+.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 11px 0;
+}
+
+card {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  color: #757575;
+  width: 524px;
+  height: 524.24px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 1px #666;
+  font-family: Verdana;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: center;
+  color: black;
+  margin-bottom: 46px;
+}
+
+input {
+  margin-bottom: 23.22px;
+  width: 475.91px;
+  height: 71.3px;
+  top: 426.32px;
+  left: 61.22px;
+  border-radius: 3.89px;
+  border: 1.3px solid #757575;
+}
