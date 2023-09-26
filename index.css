@@ -193,3 +193,11 @@ input {
 .appear {
   display: inline;
 }
+
+.order-completed{
+  border-radius: 3px;
+  background-color: #ECFDF5;
+  font-size: 32px;
+  text-align: center;
+  padding: 50px;  
+}

@@ -1,15 +1,13 @@
 import { menuArray } from "./data.js";
 
 const card = document.getElementById("card");
-const payBtn = document.getElementById("pay-btn");
+const consentForm = document.getElementById("consent-form");
 const ticket = document.getElementById("ticket");
 const main = document.getElementById("main");
 let facture = [];
 let totalPrice = 0;
 
-payBtn.addEventListener("click", () => {
-  card.style.display = "none";
-});
+
 
 document.addEventListener("click", function (e) {
   if (e.target.dataset.quantity) {
@@ -79,3 +77,11 @@ const menu = menuArray
   })
   .join("");
 main.innerHTML = menu;
+
+consentForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+  const consentFormData = new FormData(consentForm)
+  const name = consentFormData.get('name')
+  card.style.display = "none"
+  ticket.innerHTML = `<p class="order-completed">Thanks, ${name} Your order is on its way!</p>`
+});
